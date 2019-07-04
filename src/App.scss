@@ -1,3 +1,4 @@
+@import "home";
 * {
   box-sizing: border-box;
 }
@@ -12,12 +13,10 @@
 }
 
 .banner {
-
   .card-section {
     padding: 25px;
   }
   .container {
-
     .is-horizontal-center {
       justify-content: center;
     }
@@ -58,4 +57,3 @@ footer {
     margin: 10px 10px;
   }
 }
-
