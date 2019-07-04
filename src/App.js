@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Quiz from "./components/Quiz.jsx";
 import AddNewQuestion from "./components/AddNewQuestion";
+import Admin from "./components/Admin";
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
           <Route path="/quiz" component={Quiz} />
           <Route path="/signin" component={SignIn} />
           <Route path="/admin/addnew" component={AddNewQuestion} />
+          <Route path="/admin" component={Admin} />
           <Route render={() => <p>Not found</p>} />
         </Switch>
 
