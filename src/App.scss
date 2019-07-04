@@ -8,7 +8,6 @@
 }
 
 .App {
-
   text-align: center;
 }
 
@@ -27,7 +26,6 @@
 }
 
 footer {
-  
   background-color: #3ac4a7 !important;
   padding: 5px !important ;
   position: absolute;
@@ -36,7 +34,6 @@ footer {
   width: 100%;
   .content {
     padding: 0;
-  
   }
   p {
     font-size: 1.5rem;
@@ -56,4 +53,21 @@ footer {
     font-size: 25px;
     margin: 10px 10px;
   }
+}
+.wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.quiz-showcase {
+  padding-bottom: 1rem;
+}
+.quiz-option {
+  border: 1px solid #3ac4a7;
+  padding: 0.8rem 0;
+  border-radius: 8px;
+}
+.quiz-option:hover {
+  background-color: #3ac4a7;
+  color: beige;
 }

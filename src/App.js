@@ -5,6 +5,7 @@ import SignIn from "./components/SignIn";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
+import Quiz from "./components/Quiz.jsx";
 import AddNewQuestion from "./components/AddNewQuestion";
 import Admin from "./components/Admin";
 function App() {
@@ -14,6 +15,8 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/signin" component={SignIn} />
+          <Route path="/quiz" component={Quiz} />
           <Route path="/signin" component={SignIn} />
           <Route path="/admin/addnew" component={AddNewQuestion} />
           <Route path="/admin" component={Admin} />
