@@ -17,12 +17,15 @@ function AddNewQuestion(){
             <input className="form-option" type="text" placeholder="Option 4"/>
             <input className="form-option" type="text" placeholder="Correct answer"/>
             </form>
-            <select className="form-option" >
+            <select className="form-select" >
                 <option value="" disabled selected>Categories</option>
                 <option value="frontend">Frontend</option>
                 <option value="backend">Backend</option>
                 <option value="fullstack">Fullstack</option>
             </select>
+            <div className="centre">
+                <button className="button is-primary">submit</button>
+            </div>
         </div>
     )
 }
