@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./home.scss";
 
 class Home extends Component {
   constructor(props) {
@@ -28,11 +29,7 @@ class Home extends Component {
                     <div className="card">
                       <div className="card-image is-flex is-horizontal-center ">
                         <figure className="image is-128x128">
-                          <img
-                            className="is-rounded"
-                            src="https://bulma.io/images/placeholders/1280x960.png"
-                            alt="Placeholder image"
-                          />
+                          <i class="fas fa-file-code" />
                         </figure>
                       </div>
                       <div className="card-content">
@@ -49,11 +46,7 @@ class Home extends Component {
                     <div className="card">
                       <div className="card-image is-flex is-horizontal-center">
                         <figure className="image is-128x128">
-                          <img
-                            className="is-rounded"
-                            src="https://bulma.io/images/placeholders/1280x960.png"
-                            alt="Placeholder image"
-                          />
+                          <i class="fas fa-file-medical-alt" />
                         </figure>
                       </div>
                       <div className="card-content">
@@ -70,11 +63,7 @@ class Home extends Component {
                     <div className="card">
                       <div className="card-image is-flex is-horizontal-center">
                         <figure className="image is-128x128">
-                          <img
-                            className="is-rounded"
-                            src="https://bulma.io/images/placeholders/1280x960.png"
-                            alt="Placeholder image"
-                          />
+                          <i class="fas fa-file-invoice" />
                         </figure>
                       </div>
                       <div className="card-content">
