@@ -8,11 +8,10 @@ class Footer extends Component {
   render() {
     return (
       <>
-        <footer class="footer is primary">
+        <footer class="footer is-primary">
           <div class="content has-text-centered">
             <p>
-              <strong>Interview It</strong> by{"altcampus"}
-                          
+              <strong>Interview It</strong> by altcampus
             </p>
           </div>
         </footer>
