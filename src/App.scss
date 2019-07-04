@@ -21,12 +21,10 @@ body {
 }
 
 .banner {
-
   .card-section {
     padding: 25px;
   }
   .container {
-
     .is-horizontal-center {
       justify-content: center;
     }
@@ -67,4 +65,8 @@ footer {
     margin: 10px 10px;
   }
 }
-
+.wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
