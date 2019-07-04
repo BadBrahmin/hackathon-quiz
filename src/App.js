@@ -4,7 +4,8 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import SignIn from "./components/SignIn";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
+import Quiz from "./components/Quiz";
 function App() {
   return (
     <Router>
@@ -13,10 +14,11 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/signin" component={SignIn} />
+          <Route path="/quiz" component={Quiz} />
           <Route render={() => <p>Not found</p>} />
         </Switch>
 
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );
