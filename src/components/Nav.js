@@ -6,7 +6,12 @@ function Nav() {
     <>
       <div className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <p>Dev Prepped</p>
+          
+            <img
+              src={require("../media/dev-prepped-logo.png")}
+              width="112"
+              height="62"
+            />
         </div>
 
         <div class="navbar-end">
