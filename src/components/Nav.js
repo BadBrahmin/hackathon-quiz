@@ -25,14 +25,10 @@ function Nav() {
                 className="button is-primary"
                 to="/signin"
               >
-                Sign In
-              </NavLink>
-              <NavLink
-                activeClassName="active "
-                className="button is-primary"
-                to="/signup"
-              >
-                Sign Up
+                <span class="icon is-small">
+                  <i class="fab fa-github" />
+                </span>
+                <span>Sign in with github</span>
               </NavLink>
             </div>
           </div>
