@@ -18,16 +18,43 @@ body {
   padding-bottom: 100px; /* height of your footer */
   text-align: center;
   text-align: center;
-
-
 }
+
+.banner {
+
+  .card-section {
+    padding: 25px;
+  }
+  .container {
+
+    .is-horizontal-center {
+      justify-content: center;
+    }
+    figure {
+      margin-top: 20px;
+    }
+  }
+}
+
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  background-color: #3ac4a7 !important;
+  padding: 0 !important ;
+  .content {
+    padding: 0;
+    p {
+      margin: 50px 0;
+    }
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  strong {
+    color: white;
+  }
 }
-
-
 
 .navbar {
   padding: 5px;
@@ -41,13 +68,3 @@ footer {
   }
 }
 
-footer {
-  background-color: #3ac4a7 !important;
-  padding: 0 !important ;
-  .content {
-    padding: 0;
-    p {
-      margin: 50px 0;
-    }
-  }
-}

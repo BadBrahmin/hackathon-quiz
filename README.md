@@ -1,68 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AltCampus Hackathon - Dev Prepped!
 
-## Available Scripts
+Hi! "**_Dev Prepped_**" is a project part of the 4th of July Hackathon at [AltCampus](https://github.com/AltCampus).
 
-In the project directory, you can run:
+# Collaborators
 
-### `npm start`
+- Gemahar Rafi ([GitHub Profile](https://www.github.com/gemhar33))
+- Rajesh Mule ([GitHub Profile](https://www.github.com/rajeshmule))
+- Prateek Arora ([GitHub Profile](https://www.github.com/prarora98))
+- Sourav Kumar ([GitHub Profile](https://www.github.com/souravbaranwal))
+- Yash Joshi ([GitHub Profile](https://www.github.com/yjspoder))
+- Shree Tejas Aithal ([GitHub Profile](https://www.github.com/badbrahmin))
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# What is the project about?
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Problem
 
-### `npm test`
+Job interviews can be hard and intimidating. While companies have unique approaches to interviewing potential candidates over multiple rounds, technical rounds are common across all of them. Companies will ask you questions based on the stack they use or have you write code in a IDE.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Question rounds can be unnerving. You sit facing a HR/Head of Engineering/ CEO and even the simplest questions can wipe your memory slate. The pressure to be correct overwhelms all the preparation you did.
 
-### `npm run build`
+## Solution
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**If preparation is king, then composure is queen.**
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Dev-Prepped prepares a candidate to answer relevant technical questions but with a time-constrain. As the candidate attempts and succeeds answering a range of categorised questions under pressure, response time increases. Yes, correct answers > quick replies but we can achieve both!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Tech-stack used:
 
-### `npm run eject`
+- HTML-CSS
+- React
+- Node.js
+- Express.js
+- MongoDB
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Instructions for collaboration
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone the project and create a new branch out of `develop` that should be named as `<your initials>-<name of section>` e.g. `TA-home`, `ta-backend`.
+- Do not make any changes in `master` or `develop`.
+- Do not send PR's to `master`. Send them to `develop`.
+- Have a `mobile-first` approach to design the website.
+- Keep the `classnames` meaningful and avoid classname conflicts in CSS and write reuseable code.
+- In case of merge conflicts, compare your branch with `develop` and `pull` if necessary.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Instructions to add your questions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+**Coming soon**
