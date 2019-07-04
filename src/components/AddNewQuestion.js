@@ -8,7 +8,7 @@ import "../components/AddNewQuestion.scss";
 function AddNewQuestion(){
     return (
         <div>
-            <h1 className="add-question-heading">Add New Question</h1>
+            <h2 className="add-question-heading">Add New Question</h2>
             <form className="flex-column">
             <input className="form-question" type="text" placeholder="Question"/>
             <input className="form-option" type="text" placeholder="Option 1"/>
@@ -17,8 +17,8 @@ function AddNewQuestion(){
             <input className="form-option" type="text" placeholder="Option 4"/>
             <input className="form-option" type="text" placeholder="Correct answer"/>
             </form>
-            <select className="form-option">
-                <option value="Categories">Categories</option>
+            <select className="form-option" >
+                <option value="" disabled selected>Categories</option>
                 <option value="frontend">Frontend</option>
                 <option value="backend">Backend</option>
                 <option value="fullstack">Fullstack</option>
