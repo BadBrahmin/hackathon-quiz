@@ -4,14 +4,17 @@ import "../components/AddNewQuestion.scss";
 
 
 
-
 function Admin(){
     return (
         <main>
-            <button className="centre form-question">
-                <a href="/admin/addnew">ADD QUESTION</a>
-            </button>
-
+            <div className="flex-column">
+                <button className="button is-primary is-large">
+                    <a href="/admin/addnew">ADD QUESTION</a>
+                </button>
+                <button className="button is-primary is-large">
+                    <a href="/admin/Questionlist">QUESTION-LIST</a>
+                </button>
+            </div>
         </main>
     )
 }
