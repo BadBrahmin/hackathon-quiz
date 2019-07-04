@@ -1,3 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+}
 .App {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
   text-align: center;
+  text-align: center;
+
+
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.navbar {
+  padding: 5px;
+}
+.navbar-brand {
+  p {
+    font-weight: 600;
+    color: #5cb85c;
+    font-size: 25px;
+    margin: 10px 10px;
+  }
+}
+
+footer {
+  background-color: #3ac4a7 !important;
+  padding: 0 !important ;
+  .content {
+    padding: 0;
+    p {
+      margin: 50px 0;
+    }
+  }
 }
