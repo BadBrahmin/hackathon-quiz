@@ -1,0 +1,31 @@
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-question-heading {
+    color: #5CB85C;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.form-question{
+    font-size: 15px;
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    border: 1px solid rgb(172, 167, 167);
+   
+}
+.form-option{
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid rgb(172, 167, 167);
+    
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
