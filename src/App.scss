@@ -5,17 +5,17 @@
 *:after {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-  position: relative;
-}
+// html,
+// body {
+//   height: 100%;
+//   position: relative;
+// }
 .App {
   min-height: 100vh; /* will cover the 100% of viewport */
   overflow: hidden;
   display: block;
   position: relative;
-  padding-bottom: 100px; /* height of your footer */
+  // padding-bottom: 100px; /* height of your footer */
   text-align: center;
   text-align: center;
 }
@@ -37,11 +37,12 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
+  height: 100%;
   width: 100%;
   background-color: #3ac4a7 !important;
-  padding: 0 !important ;
+  padding: 5px !important ;
   .content {
     padding: 0;
     p {
