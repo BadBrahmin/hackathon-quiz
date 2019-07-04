@@ -6,7 +6,7 @@ function Nav() {
     <>
       <div className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <p>Interview It</p>
+          <p>Dev Prepped</p>
         </div>
 
         <div class="navbar-end">
