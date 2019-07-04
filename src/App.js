@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import AddNewQuestion from "./components/AddNewQuestion";
+import Admin from "./components/Admin";
 function App() {
   return (
     <Router>
@@ -13,8 +14,9 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/signin" component={SignIn} /><Route path="/" component={SignIn} />
+          <Route path="/signin" component={SignIn} />
           <Route path="/admin/addnew" component={AddNewQuestion} />
+          <Route path="/admin" component={Admin} />
           <Route render={() => <p>Not found</p>} />
         </Switch>
 
