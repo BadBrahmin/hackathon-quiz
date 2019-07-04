@@ -13,7 +13,7 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/signin" component={SignIn} /><Route path="/" component={SignIn} />
+          <Route path="/signin" component={SignIn}/>
           <Route path="/admin/addnew" component={AddNewQuestion} />
           <Route render={() => <p>Not found</p>} />
         </Switch>
