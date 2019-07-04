@@ -5,18 +5,9 @@
 *:after {
   box-sizing: border-box;
 }
-// html,
-// body {
-//   height: 100%;
-//   position: relative;
-// }
+
 .App {
-  min-height: 100vh; /* will cover the 100% of viewport */
-  overflow: hidden;
-  display: block;
-  position: relative;
-  // padding-bottom: 100px; /* height of your footer */
-  text-align: center;
+
   text-align: center;
 }
 
@@ -37,17 +28,16 @@
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
+  
   background-color: #3ac4a7 !important;
   padding: 5px !important ;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
   .content {
     padding: 0;
-    p {
-      margin: 50px 0;
-    }
+  
   }
   p {
     font-size: 1.5rem;
