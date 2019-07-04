@@ -70,3 +70,15 @@ footer {
   width: 100%;
   margin: 0 auto;
 }
+.quiz-showcase {
+  padding-bottom: 1rem;
+}
+.quiz-option {
+  border: 1px solid #3ac4a7;
+  padding: 0.8rem 0;
+  border-radius: 8px;
+}
+.quiz-option:hover {
+  background-color: #3ac4a7;
+  color: beige;
+}

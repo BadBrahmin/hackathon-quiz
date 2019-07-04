@@ -5,7 +5,7 @@ import SignIn from "./components/SignIn";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import Quiz from "./components/Quiz";
+import Quiz from "./components/Quiz.jsx";
 function App() {
   return (
     <Router>
