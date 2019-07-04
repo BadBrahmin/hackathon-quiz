@@ -13,15 +13,18 @@ class Home extends Component {
           <section className="hero">
             <div className="hero-body">
               <div className="container">
-                <h1 className="title">Interview It</h1>
+                <h1 className="title">Dev Prepped</h1>
                 <h2 className="subtitle">
                   Get prepared for interviews, <br /> the easy way !!
                 </h2>
                 <Link className=" button is-primary" to="/signin">
                   Get Prepp'd
                 </Link>
-                <div className="columns card-section">
-                  <div className="column">
+
+                {/* HOW IT WORKS SECTION */}
+
+                <div className="columns card-section how-it-works-section">
+                  <div className="column is-one-quarter home-column">
                     <div className="card">
                       <div className="card-image is-flex is-horizontal-center ">
                         <figure className="image is-128x128">
@@ -40,9 +43,9 @@ class Home extends Component {
                     </div>
                   </div>
                   <div className="column">
-                    <i className="fas fa-arrow-circle-right" />
+                    <i className="fas fa-arrow-circle-right has-text-primary" />
                   </div>
-                  <div className="column">
+                  <div className="column is-one-quarter home-column">
                     <div className="card">
                       <div className="card-image is-flex is-horizontal-center">
                         <figure className="image is-128x128">
@@ -61,9 +64,9 @@ class Home extends Component {
                     </div>
                   </div>
                   <div className="column">
-                    <i className="fas fa-arrow-circle-right" />
+                    <i className="fas fa-arrow-circle-right has-text-primary" />
                   </div>
-                  <div className="column">
+                  <div className="column is-one-quarter home-column">
                     <div className="card">
                       <div className="card-image is-flex is-horizontal-center">
                         <figure className="image is-128x128">
