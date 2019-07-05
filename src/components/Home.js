@@ -18,7 +18,7 @@ class Home extends Component {
                 <h2 className="subtitle">
                   Get prepared for interviews, the easy way !!
                 </h2>
-                <Link className=" button is-primary is-medium" to="/signin">
+                <Link className=" button is-danger is-medium" to="/signin">
                   Get Prepp'd
                 </Link>
 
@@ -74,6 +74,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
+                <h2 className= 'title is-size-4	title2'>Who is it For ?</h2>
                 <div className="columns for-who-section">
                   <div className="column" />
                   <div className="column is-one-quarter home-column">
