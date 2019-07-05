@@ -6,7 +6,11 @@ function Nav() {
     <>
       <div className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <p>Dev Prepped</p>
+          <img
+            src={require("../media/dev-prepped-logo-new.png")}
+            width="170"
+            height="62"
+          />
         </div>
 
         <div class="navbar-end">
@@ -20,16 +24,27 @@ function Nav() {
               >
                 Home
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 activeClassName="active "
                 className="button is-primary"
-                to="/signin"
+                to="https://www.google.com/"
               >
                 <span class="icon is-small">
                   <i class="fab fa-github" />
                 </span>
                 <span>Sign in with github</span>
-              </NavLink>
+              </NavLink> */}
+
+              <a
+                href="https://www.google.com/"
+                activeClassName="active "
+                className="button is-primary"
+              >
+                <span class="icon is-small">
+                  <i class="fab fa-github" />
+                </span>
+                <span>Sign in with github</span>
+              </a>
             </div>
           </div>
         </div>
