@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+import "./components/profile.scss";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import SignIn from "./components/SignIn";
 import Nav from "./components/Nav";
@@ -8,6 +9,11 @@ import Footer from "./components/Footer";
 import Quiz from "./components/Quiz.jsx";
 import AddNewQuestion from "./components/AddNewQuestion";
 import Admin from "./components/Admin";
+
+import Profile from "./components/profile";
+import DASH from "./components/admin-dash";
+
+
 import Questionlist from "./components/Questionlist";
 function App() {
   return (
@@ -21,7 +27,12 @@ function App() {
           <Route path="/signin" component={SignIn} />
           <Route path="/admin/addnew" component={AddNewQuestion} />
           <Route path="/admin" component={Admin} />
+
+          <Route path="/profile" component={Profile} />
+          <Route path="/dash" component={DASH} />
+
           <Route path="/admin/Questionlist" component={Questionlist} />
+
           <Route render={() => <p>Not found</p>} />
         </Switch>
 
