@@ -23,58 +23,61 @@ class Home extends Component {
                 </Link>
 
                 {/* HOW IT WORKS SECTION */}
-
-                <div className="columns card-section how-it-works-section">
-                  <div className="column is-one-quarter home-column">
-                    <div className="card">
-                      <div className="card-image is-flex is-horizontal-center ">
-                        <figure className="image is-128x128">
-                          <i class="fas fa-file-code" />
-                        </figure>
-                      </div>
-                      <div className="card-content">
-                        <div className="content">
-                          <h3>Take test</h3>
+                <div className="block1">
+                  <h2 className="title is-size-4	title1">How it works ?</h2>
+                  <div className="columns card-section how-it-works-section">
+                    <div className="column is-one-quarter home-column">
+                      <div className="card">
+                        <div className="card-image is-flex is-horizontal-center ">
+                          <figure className="image is-128x128">
+                            <i class="fas fa-file-code" />
+                          </figure>
+                        </div>
+                        <div className="card-content">
+                          <div className="content">
+                            <h3>Take test</h3>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="column">
-                    <i className="fas fa-arrow-circle-right has-text-primary" />
-                  </div>
-                  <div className="column is-one-quarter home-column">
-                    <div className="card">
-                      <div className="card-image is-flex is-horizontal-center">
-                        <figure className="image is-128x128">
-                          <i class="fas fa-file-medical-alt" />
-                        </figure>
-                      </div>
-                      <div className="card-content">
-                        <div className="content">
-                          <h3>Get results</h3>
+                    <div className="column">
+                      <i className="fas fa-arrow-circle-right has-text-danger" />
+                    </div>
+                    <div className="column is-one-quarter home-column">
+                      <div className="card">
+                        <div className="card-image is-flex is-horizontal-center">
+                          <figure className="image is-128x128">
+                            <i class="fas fa-file-medical-alt" />
+                          </figure>
+                        </div>
+                        <div className="card-content">
+                          <div className="content">
+                            <h3>Get results</h3>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="column">
-                    <i className="fas fa-arrow-circle-right has-text-primary" />
-                  </div>
-                  <div className="column is-one-quarter home-column">
-                    <div className="card">
-                      <div className="card-image is-flex is-horizontal-center">
-                        <figure className="image is-128x128">
-                          <i class="fas fa-file-invoice" />
-                        </figure>
-                      </div>
-                      <div className="card-content">
-                        <div className="content">
-                          <h3>Compare results</h3>
+                    <div className="column">
+                      <i className="fas fa-arrow-circle-right has-text-danger" />
+                    </div>
+                    <div className="column is-one-quarter home-column">
+                      <div className="card">
+                        <div className="card-image is-flex is-horizontal-center">
+                          <figure className="image is-128x128">
+                            <i class="fas fa-file-invoice" />
+                          </figure>
+                        </div>
+                        <div className="card-content">
+                          <div className="content">
+                            <h3>Compare results</h3>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <h2 className= 'title is-size-4	title2'>Who is it For ?</h2>
+
+                <h2 className="title is-size-4	title2">Who is it For ?</h2>
                 <div className="columns for-who-section">
                   <div className="column" />
                   <div className="column is-one-quarter home-column">
