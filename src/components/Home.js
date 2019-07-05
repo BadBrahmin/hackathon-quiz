@@ -74,6 +74,39 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
+                <div className="columns for-who-section">
+                  <div className="column" />
+                  <div className="column is-one-quarter home-column">
+                    <div className="card">
+                      <div className="card-image is-flex is-horizontal-center">
+                        <figure className="image is-128x128">
+                          <i class="fas fa-file-invoice" />
+                        </figure>
+                      </div>
+                      <div className="card-content">
+                        <div className="content">
+                          <h3>Compare results</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="column" />
+                  <div className="column is-one-quarter home-column">
+                    <div className="card">
+                      <div className="card-image is-flex is-horizontal-center">
+                        <figure className="image is-128x128">
+                          <i class="fas fa-file-invoice" />
+                        </figure>
+                      </div>
+                      <div className="card-content">
+                        <div className="content">
+                          <h3>Compare results</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="column" />
+                </div>
               </div>
             </div>
           </section>
