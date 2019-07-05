@@ -1,6 +1,6 @@
 import React from "react";
 
-function DASH() {
+function AdminDash() {
   return (
     <div>
           <div class="is-size-1 has-text-weight-bold	">
@@ -32,4 +32,4 @@ function DASH() {
   );
 }
 
-export default DASH;
+export default AdminDash;
