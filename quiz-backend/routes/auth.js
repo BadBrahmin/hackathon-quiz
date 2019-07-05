@@ -15,14 +15,30 @@ const authToken = require('../utils/authMiddleware.js');
 //authenticate
 router.get('/github', passport.authenticate('github'));
 
-//authenticate callback
+// router.get('/github', function(req, res, next) {
+//     passport.authenticate('github', function(err, user, info) {
+//       if (err) { return next(err); }
+//       if (!user) { return res.redirect('http://localhost:3000/'); }
+//       req.logIn(user, function(err) {
+//         if (err) { return next(err); }
+//         jwt.sign({userId: req.user.id}, config.jwsSecret, (err, token) => {
+//             if(err) return res.status(500).json(err);
+//             // res.status(200).json({token: token});
+//         })
+//         return res.redirect('http://localhost:3000/' + user.username);
+//       });
+//     })(req, res, next);
+//   });
+
+// authenticate callback
 router.get('/github/callback',
- passport.authenticate('github', {failureRedirect: '/'}),
+ passport.authenticate('github', {failureRedirect: 'http://localhost:3000'}),
  function(req, res) {
      console.log(req.user);
     jwt.sign({userId: req.user.id}, config.jwsSecret, (err, token) => {
         if(err) return res.status(500).json(err);
-        res.status(200).json({token: token});
+        // res.status(200).json({token: token});
+        res.redirect('http://localhost:3000?token=' + token)
     })
 
  });
@@ -34,7 +50,7 @@ passport.use(new GithubStrategy({
     }, 
     function(accessToken, refreshToken, profile, callback) {
         //checking profile details:
-        // console.log(profile);
+        console.log(profile, 'profile');
         User.findOne({email: profile._json.email}, (err, oldUser) => {
             if(err) return callback(err, false);
             if(oldUser) {

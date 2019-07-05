@@ -7,10 +7,11 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const passport = require('passport');
+const cors = require('cors');
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
+const apiRouter = require('./routes/api/api');
 
 const app = express();
 
@@ -23,6 +24,7 @@ mongoose.connect('mongodb://localhost/hackathon-quiz',{ useNewUrlParser: true },
   console.log(err ? err : 'DB connected...')
 });
 
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -42,8 +44,8 @@ app.use(passport.session());
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/auth', authRouter);
+app.use('/api/v1', apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -62,3 +64,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
+
