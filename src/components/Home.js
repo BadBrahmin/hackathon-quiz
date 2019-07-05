@@ -16,9 +16,9 @@ class Home extends Component {
               <div className="container">
                 <h1 className="title">Dev Prepped</h1>
                 <h2 className="subtitle">
-                  Get prepared for interviews, <br /> the easy way !!
+                  Get prepared for interviews, the easy way !!
                 </h2>
-                <Link className=" button is-primary" to="/signin">
+                <Link className=" button is-primary is-medium" to="/signin">
                   Get Prepp'd
                 </Link>
 
