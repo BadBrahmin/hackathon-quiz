@@ -8,7 +8,7 @@ exports.logout = (req, res, next) => {
 }
 
 exports.getCurrentUser = (req, res, next) => {
-  res.status(201).json({user: res.user});
+  res.status(201).json({user: req.user});
 }
 
 exports.updateUser = (req, res, next) => {

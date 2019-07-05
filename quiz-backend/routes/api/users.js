@@ -5,9 +5,8 @@ const authToken = require('../../utils/authMiddleware');
 const userController = require('../../controllers/userController')
 
 
-router.post('/user/admin', userController.createAdmin);
 
-router.use(authToken.verifyToken);
+// router.use(authToken.verifyToken);
 
 /* GET current user. */
 router.get('/user', userController.getCurrentUser);

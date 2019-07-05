@@ -4,21 +4,36 @@ exports.getAllQuestions = (req, res, next) => {
 
   Question.find({}, (err, questions)=>{
     if(err) return res.status(500).json(err);
-    response.json(questions);
+    res.json(questions);
   });
 }
 
 exports.getTestQuestions = (req, res, next) => {
-    res.render('editUser');
-    //TODO use aggregat to get 10 random sample
-    Question.aggregate({ $match : { 'category': req.body.category }}, {'$sample': {'size': 10 } }, (err, questions)=>{
-      if(err) return res.status(500).json(err);
-      response.json(questions);
-    });
+
+  //TODO use aggregat to get 10 random sample
+  Question.aggregate({ $match : { 'category': req.body.category }}, {'$sample': {'size': 10 } }, (err, questions)=>{
+    if(err) return res.status(500).json(err);
+    let testSet = questions.map(question => {
+      return  {
+          id: question.id,
+          title: question.title ,
+          options: question.options,
+          category:question.category
+        }
+    })
+    res.json(testSet);
+  });
 }
 
 exports.createQuestion = (req, res, next) => {
-  Question.create(req.body, (err, question)=>{
+  let {title, option1, option2, option3, option4, answer, category}  = req.body;
+  let newQuestion = {
+    title,
+    answer,
+    category,
+    options: [option1, option2, option3, option4]
+  }
+  Question.create(newQuestion, (err, question)=>{
 		if(err) return res.status(500).json(err);
 		res.status(201).json({question: question});
   });

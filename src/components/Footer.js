@@ -11,7 +11,8 @@ class Footer extends Component {
         <footer class="footer is-primary">
           <div class="content has-text-centered">
             <p>
-              <strong>Interview It</strong> by altcampus
+              <strong>Dev Prepped</strong> a product of a Hackathon at {""}
+              <a href="https://altcampus.io"> AltCampus</a>
             </p>
           </div>
         </footer>

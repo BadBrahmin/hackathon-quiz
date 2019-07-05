@@ -1,46 +1,108 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-class Nav extends React.Component {
+function Nav() {
+  return (
+    <>
 
-  render() {
+      <div className="navbar" role="navigation" aria-label="main navigation">
 
-    return (
-      <>
-        <div className="navbar" role="navigation" aria-label="main navigation">
-          <div className="navbar-brand">
-            <p>Interview It</p>
-          </div>
-  
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <NavLink
-                  exact
-                  activeClassName="active "
-                  className="button is-primary"
-                  to="/"
-               >
+        <div className="navbar-brand">
 
-                  Home
-                </NavLink>
-                <a
-                  className="button is-primary"
-                  href="http://localhost:4000/auth/github"
-                >
-                  <span class="icon is-small">
-                    <i class="fab fa-github" />
-                  </span>
-                  <span>Sign in with github</span>
-                </a>
-              </div>
-            </div>
-          </div>
+          <img
+
+            // src={require("../media/dev-prepped-logo-new.png")}
+
+            width="170"
+
+            height="62"
+
+          />
+
         </div>
-        <div />
-      </>
-    )
-  }
+
+
+
+        <div class="navbar-end">
+
+          <div class="navbar-item">
+
+            <div class="buttons">
+
+              <NavLink
+
+                exact
+
+                activeClassName="active "
+
+                className="button is-primary"
+
+                to="/"
+
+              >
+
+                Home
+
+              </NavLink>
+
+              {/* <NavLink
+
+                activeClassName="active "
+
+                className="button is-primary"
+
+                to="https://www.google.com/"
+
+              >
+
+                <span class="icon is-small">
+
+                  <i class="fab fa-github" />
+
+                </span>
+
+                <span>Sign in with github</span>
+
+              </NavLink> */}
+
+
+
+              <a
+
+                href="http://localhost:4000/auth/github"
+
+                activeClassName="active "
+
+                className="button is-primary"
+
+              >
+
+                <span class="icon is-small">
+
+                  <i class="fab fa-github" />
+
+                </span>
+
+                <span>Sign in with github</span>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div />
+
+    </>
+
+  );
+
 }
+
+
 
 export default Nav;

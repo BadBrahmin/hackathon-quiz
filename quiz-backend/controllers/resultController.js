@@ -4,51 +4,30 @@ const Question = require('../models/question');
 exports.getAllresults = (req, res, next) => {
   Result.find({user: req.user.id}, (err, results)=>{
     if(err) return res.status(500).json(err);
-    response.json(results);
+    res.json(results);
   })
 }
 
 exports.createResult = (req, res, next) => {
-    //To do check for the Score and send it back machi...
-
-    // GET an array of obj with
-    // results = [{
-      // questionId:
-      // answer:
-    // }, ]
+    //To do check for the Score and send it back machi..
+    let questionsIds = res.body.results.map( result => {
+      return result.questionId;
+    })
+    calculateSet()
     
-    let set = [];
-    let score = 0;
-
-    req.body.reults.forEach(result => {
-      // var answer = {};
-      Question.findById( result.questionId, (err, question)=>{
+    Question.find({_id: {$in : questionsIds }}, (err, questions) => {
+      if(err) return res.status(500).json(err);
+      let currentSet = []
+      questions.forEach(question => {
+        var answer = {};
+        answer.question = question.id;
+        answer.correct = result.answer === question.answer;
+        currentSet.push(answer)
+      })
+      let result = {user: req.user, set: currentSet}
+      Result.create(result, (err, newResult) => {
         if(err) return res.status(500).json(err);
-        answer.question = question.id;
-        answer.correct = result.answer === question.answer;
-        set.push(answer);
-      });
-    });
-
-    // calculateSet(results, (err, set) => {
-
-    // })
-    console.log(set)
-		res.status(201).json({result: result});
+        res.json({result: newResult});
+      })
+    })
 }
-
-function calculateSet (results, cb) {
-  let set = [];
-
-    req.body.reults.forEach(result => {
-      var answer = {};
-      Question.findById( result.questionId, (err, question)=>{
-        if(err) return cb(err, null)
-        answer.question = question.id;
-        answer.correct = result.answer === question.answer;
-        set.push(answer)
-      });
-    });
-  cb(null, set)
-}
-  
