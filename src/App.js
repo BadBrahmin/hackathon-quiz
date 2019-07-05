@@ -8,11 +8,9 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Quiz from "./components/Quiz.jsx";
 import AddNewQuestion from "./components/AddNewQuestion";
-import Admin from "./components/Admin";
 
 import Profile from "./components/profile";
-import DASH from "./components/admin-dash";
-
+import AdminDash from "./components/AdminDash";
 
 import Questionlist from "./components/Questionlist";
 function App() {
@@ -26,12 +24,11 @@ function App() {
           <Route path="/quiz" component={Quiz} />
           <Route path="/signin" component={SignIn} />
           <Route path="/admin/addnew" component={AddNewQuestion} />
-          <Route path="/admin" component={Admin} />
+          <Route path="/admin" component={AdminDash} />
 
           <Route path="/profile" component={Profile} />
-          <Route path="/dash" component={DASH} />
 
-          <Route path="/admin/Questionlist" component={Questionlist} />
+          {/* <Route path="/admin/admindashboard" component={AdminDash} /> */}
 
           <Route render={() => <p>Not found</p>} />
         </Switch>

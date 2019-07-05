@@ -13,8 +13,9 @@
 footer {
   background-color: #3ac4a7 !important;
   padding: 18px !important ;
-  // position: absolute;
-  // bottom: 0;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
   padding: 1rem;
   width: 100%;
   .content {

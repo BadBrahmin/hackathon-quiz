@@ -24,6 +24,31 @@ function Nav() {
               >
                 Home
               </NavLink>
+              <NavLink
+                exact
+                activeClassName="active "
+                className="button is-primary"
+                to="/admin"
+              >
+                AdminDashboard
+              </NavLink>
+              <NavLink
+                exact
+                activeClassName="active "
+                className="button is-primary"
+                to="/profile"
+              >
+                Profile
+              </NavLink>
+              <NavLink
+                exact
+                activeClassName="active "
+                className="button is-primary"
+                to="/admin/addnew"
+              >
+                New Question
+              </NavLink>
+
               {/* <NavLink
                 activeClassName="active "
                 className="button is-primary"
