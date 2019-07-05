@@ -23,8 +23,12 @@
   i {
     font-size: 85px;
   }
-  .how-it-works-section {
-    margin-top: 60px;
+  
+  
+  .title1 {
+    font-family: "Roboto Mono", monospace;
+    padding-top: 80px;
+    // background: #3AC4A7;
   }
   .title2 {
     font-family: "Roboto Mono", monospace;
@@ -35,6 +39,7 @@
 .fa-arrow-circle-right {
   padding-top: 70%;
   font-size: 2.5rem !important;
+  // color: #F62B56  !important;
 }
 
 .card {
@@ -44,7 +49,7 @@
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   i {
-    // color: white;
+    color: #40D3BC;
   }
   &:hover {
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.657);
